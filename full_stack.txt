@@ -4,3 +4,5 @@ boot strap
 hlo
 html
 css
+jquery
+angular
