@@ -1,0 +1,18 @@
+.a1{
+    color: aqua;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.a2{
+    color: blue;
+    text-align: left;
+    text-transform: lowercase;
+    font-style: oblique;
+}
+.a3{
+    color: brown;
+    text-align: right;
+    text-transform: uppercase;
+    font-style: inherit;
+}
