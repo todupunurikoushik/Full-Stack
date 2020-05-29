@@ -1,0 +1,43 @@
+.a1{
+    background-color: aqua;
+}
+.a2{
+    background-color: bisque;
+}
+.a3{
+    background-color: brown;
+}
+
+.b1{
+    width: 70%;
+    height: 100%;
+    background-image: url('a.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.b2{
+    width: 70%;
+    height: 100%;
+    background-image: url('b.jpg');
+}
+.c1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+.c2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    font-variant: initial;
+    font-weight: bold;
+}
+.c3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: inherit;
+    font-size: 30px;
+    font-variant: inherit;
+    font-weight: lighter;
+}
