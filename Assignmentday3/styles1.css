@@ -1,0 +1,21 @@
+ul{
+    list-style-type: circle;
+    border:2px solid black;
+    background-color: ivory;
+}
+ul a{
+    display:block;
+    color: sienna;
+    margin:10px;
+    text-decoration:none;
+    font-size:20px;
+    
+}
+ul a:hover{
+    color:rebeccapurple;
+    background-color: seashell;
+    font-size:large;
+}
+ul a:active{
+    color: indianred;
+}
