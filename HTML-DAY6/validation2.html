@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pin validation</title>
+        <script>
+            function validatepin(){
+                var val=document.getElementById('txtpin').value;
+                if(/^[2][2][1][7][1][0][3][0][9][0-3][0-9][1-9]$/.test(val)){
+                    window.alert('Valid roll number');
+                }
+                else{
+                    window.alert('Invalid roll number');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txtpin" /> <br />
+        <button type="button" onclick="validatepin()">validate</button>
+    </body>
+</html>
