@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnslideUp").click(function(){
+                    $("#div1").slideUp();
+                });
+                $("#btnslideDown").click(function(){
+                    $("#div1").slideDown();
+                });
+                $("#btnslideToggle").click(function(){
+                    $("#div2").slideToggle(2000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <h1>Koushik Raj</h1>
+        </div>
+        <div id="div2">
+            <h1>Soumya</h1>
+        </div>
+        <button type="button" id="btnslideDown">slideDown</button>
+        <button type="button" id="btnslideUp">slideUp</button>
+        <button type="button" id="btnslideToggle">slideToggle</button>
+    </body>
+</html>
