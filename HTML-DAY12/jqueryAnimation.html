@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="jquery-ui-1.12.1/jquery-ui.min.css" rel="styleSheet" />
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css"  rel="StyleSheet"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript"src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function(){
+              $("#btnClick").click(function(){
+                  $("div").animate({right:'350px',height:'450px',width:'450px'});
+              }); 
+            });
+               
+        </script>
+        <style type="text/css">
+            div{
+                background-color: aqua;
+                color: red;
+                height: 250px;
+                width: 250px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" id="btnClick">Animate</button>
+        <div>
+            <h3>hello</h3>
+        </div>
+    </body>
+</html>
