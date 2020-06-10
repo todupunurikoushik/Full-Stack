@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#box").slideUp(4000);
+                });
+                $("#btn2").click(function(){
+                    $("#box").stop();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button" id="btn1">Start Animation</button>
+        <button type="button" id="btn2">Stop Animation</button>
+        <div id="box" style="background-color: #5858fa; height: 100px;width: 100px;margin: 6px;">
+    </body>
+</html>
