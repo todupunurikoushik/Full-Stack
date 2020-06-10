@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnfadeIn").click(function(){
+                    $("#div1").fadeIn();
+                });
+                $("#btnfadeOut").click(function(){
+                    $("#div1").fadeOut();
+                });
+            });
+        </script>
+        <style>
+            #div1{
+                background-color: slategray;
+                width:15%;
+                text-align: left;
+                
+            }
+            a{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <table class="table">
+                <tr><td><a href="#">Home</a></td></tr>
+                <tr><td><a href="#">Product</a></td></tr>
+                <tr><td><a href="#">Services</a></td></tr>
+                <tr><td><a href="#">About</a></td></tr>
+                <tr><td><a href="#">Contact</a></td></tr>
+            </table>
+        </div>
+        <button type="button" id="btnfadeIn">FadeIn</button>
+        <button type="button" id="btnfadeOut">FadeOut</button>
+
+    </body>
+</html>
