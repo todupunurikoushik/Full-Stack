@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnremoveClass").click(function(){
+                    $("#div1").toggleClass();
+                })
+            })
+        
+        </script>
+    </head>
+    <style>
+        .a1{
+            font-size: xx-large;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="a1" id="div1">
+            <p>Koushik Raj</p>
+        </div>
+        <div>
+            <button type="button" id="btnremoveClass">Toggle class</button>
+        </div>
+    </body>
+</html>
