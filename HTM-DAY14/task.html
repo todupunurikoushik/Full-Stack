@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <link rel="StyleSheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".slider").bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideHeight: 400,
+                slideWidth: 400
+                
+                });
+            });
+        </script>
+        <style>
+            .slider{
+                position: absolute;
+            }
+            .div1{
+                text-align: center;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            
+            <h1 class="nav-link font-weight-bold nav-title noselect content-to-hide text uppercase" aria-disabled="true"><i class="fa fa-github"></i>GitHub</h1>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    
+                    <div class="navbar-collapse collapse" id="navbar10">
+                        <ul class="navbar-nav nav-fill w-100">
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="#">Pull Request</a></li>
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="#"><i class="fa fa-times-circle"></i>Issues</a></li>
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="#"><i class="fa fa-search-dollar"></i>Market Place</a></li>
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="#"><i class="fa fa-internet-explorer"></i>Explore</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="slider">
+            <div><img src="1.png" title="Img1" /></div>
+            <div><img src="2.png" title="Img2" /></div>
+            <div><img src="3.jpg" title="Img3" /></div>
+        </div>
+    </body>
+</html>
