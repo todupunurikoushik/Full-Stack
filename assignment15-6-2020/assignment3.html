@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <link rel="StyleSheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="StyleSheet" href="jquery-ui-1.12.1/jquery-ui.min.css" />
+        <script type="text/javascript" src="bxslider-4-4.2.12/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    stopAutoOnClick: true,
+                    pager: true
+                });
+            });
+        </script>
+        <style>
+            #nav{
+                background-color: brown;
+                height: 40px;
+                color: white;
+            }
+            #head{
+                background-color: aqua;
+                height: 70px;
+            }
+            body{
+                background-color: lightblue;
+            }
+            a{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" id="head">
+            <div class="row">
+                <div>
+                    <img src="download.png" height="50px">
+                    
+                </div>
+                <div class="col-md-1">
+                    <h3>Interior</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="nav">
+            <div class="row">
+                <div class="col-md-2">
+                    <span><i class="fa fa-home fa-lg"></i></span> <a href="">Home</a>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-id-card-o fa-lg"></i></span> <a href="">About Us</a>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-taxi fa-lg"></i></span> <a href="">Services</a>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-images fa-lg"></i></span> <a href="">Gallery</a>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fas fa-blog fa-lg"></i></span> <a href="">Blog</a>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-address-book fa-lg"></i></span> <a href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slider">
+                <div><img class="sp-image" src="1.jpg" title="Img1" width="70%"></div>
+                <div><img class="sp-image" src="2.jpg" title="Img2" width="70%"></div>
+                <div><img class="sp-image" src="3.jpg" title="Img3" width="70%"></div>
+                <div><img class="sp-image" src="4.jpg" title="Img4" width="70%"></div>
+                <div><img class="sp-image" src="5.jpg" title="Img5" width="70%"></div>
+            </div>
+        </div>
+    </body>
+</html>
