@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <link href="debitcredit.css" rel="StyleSheet" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    swal({
+                        text: "Enter OTP",
+                        content: "input",
+                        button: {
+                                    text: "Submit",
+                                }
+                    }).then((value)=>{
+                
+                        swal({
+                            title:'Please Wait',
+                            text:'Your transaction is in progress',
+                            icon:"info",
+                            button:false
+                        });
+                        setTimeout(function(){
+                            swal({
+                                text:"Your transaction has completed successfully",
+                                icon:"success"
+                            });
+                        },2000);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="log">
+            <img src="logo.jpeg" height="80px" width="160px" />
+        </div>
+        <div class="title">
+            <a class="tit">KAPS Broadband Services</a>
+        </div>
+            <div class="container">
+                <div class="row" id="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6">
+                        <form action="" method="POST"  class="form" >
+                            <h3 style="text-align: center;">DEBIT/CREDIT CARD</h3>
+                            <div class="form-group">
+                                <label for="Card no">CARD NO*</label>
+                                <input type="number" class="form-control" id="number" placeholder="**** **** **** ****" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">NAME ON CARD*</label>
+                                <input type="text" class="form-control" id="name" placeholder="NAME ON CARD" />
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <label for="date">EXPIRY DATE*</label>
+                                        <input type="datetime" class="form-control" id="date" placeholder="MM/YY" />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="cvv">CVV*</label>
+                                        <input type="number" class="form-control" id="cvv" placeholder="CVV" />
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            <label>
+                                <input type="checkbox">     Save this card for faster checkout
+                            </label>
+                        <button type="button" class="btn btn-primary" id="btn" style="width: 100%;" >Pay Now</button>
+
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

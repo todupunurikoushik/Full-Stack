@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+        <link href="registration.css" rel="StyleSheet" />
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+
+        <script src="registration.js"></script>
+    </head>
+    <body>
+        <div class="log">
+            <img src="logo.jpeg" height="80px" width="160px" />
+        </div>
+        <div class="tit">
+            KAPS Broadband Services
+        </div>
+        <nav>
+            <a href="home.html" target="_self">Home</a>
+            <a href="service.html" target="_self">Service Plans</a>
+            <a href="renewal.html" target="_self">Renewal</a>
+            <a href="registration.html" target="_self">Registration</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            <a href="contact.html" target="_self">Contact Us</a>
+            <a href="Internet.html" target="_self" class="a1">Logout</a>
+        </nav>
+        
+            
+               
+                    <div class="form">
+                    <form method="POST">
+                        <div class="reg">Register for Connection</div>
+                        <div class="row">
+                            Name*<input class="name" type="text" id="name" placeholder="Enter name" name="name"><br><br>
+                            Email*<input class="name" type="text" id="email" placeholder="Enter Email" name="email"><br><br>
+                            Phone Number*<input class="name" id="number" type="number" placeholder="Enter Phone Number" name="phnnum"><br><br>
+                            Address*<textarea class="name" id="address" rows="4" cols="30" placeholder="Enter Address"></textarea><br>
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="return valid()" target="#">Submit</button>
+                        </div>
+                    </form>
+                
+                
+            
+        </div>
+    </body>
+</html>
