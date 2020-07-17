@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Renewal</title>
+        <link href="renewal.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                        
+                    window.open('payment.html');
+                        
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="log">
+            <img src="logo.jpeg" height="80px" width="160px" />
+        </div>
+        <div class="tit">
+            KAPS Internet Services
+        </div>
+        <nav>
+            <a href="home.html" target="_self">Home</a>
+            <a href="service.html" target="_self">Service Plans</a>
+            <a href="renewal.html" target="_self">Renewal</a>
+            <a href="registration.html" target="_self">Registration</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            <a href="contact.html" target="_self">Contact Us</a>
+            <a href="Internet.html" target="_self" class="a1">Logout</a>
+        </nav>
+        <div class="form">
+            <form>
+                <div class="ren">
+                    Plan Renewal
+                </div>
+                <div class="row">
+                    Service Number<input type="number" class="box" placeholder="Enter Service Number" /> <br><br>
+                    <label for="plans">Browse a Plan</label><br>
+                    <select name="plans" id="plans" class="box">
+                        <option>None</option>
+                        <option>4G 3GB 28Days 455/-</option>
+                        <option>4G 5GB 28Days 655/-</option>
+                        <option>4G 6GB 28Days 755/-</option>
+                        <option>4G 7GB 28Days 855/-</option>
+                        <option>4G 10GB 28Days 989/-</option>
+                        <option>3G 20MB 1Day 5/-</option>
+                        <option>3G 90MB 3Days 23/-</option>
+                        <option>3G 200MB 5Days 53/-</option>
+                        <option>2G 30MB 1Day 5/-</option>
+                        <option>2G 145MB 3Days 25/-</option>
+
+                    </select>
+
+                    
+                       <div class="btn">
+                           <button type="button" id="btn">Proceed</button>
+                       </div> 
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link href="contact.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="contactus.js"></script>
+    </head>
+    <body>
+        <div class="log">
+            <img src="logo.jpeg" height="80px" width="160px" />
+        </div>
+        <div class="tit">
+            KAPS Broadband Services
+        </div>
+        <nav>
+            <a href="home.html" target="_self">Home</a>
+            <a href="service.html" target="_self">Service Plans</a>
+            <a href="renewal.html" target="_self">Renewal</a>
+            <a href="registration.html" target="_self">Registration</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            <a href="contact.html" target="_self">Contact Us</a>
+            <a href="Internet.html" target="_self" class="a1">Logout</a>
+        </nav>
+        <div class="row">
+            <div class="column1">
+                <h1>Get in Touch</h1><br>
+                <p>You need more information? Check what other <br>
+                persons are saying about our product.</p><br>
+                <h2>Find us at the office</h2>
+                <p>Opp:Inorbit Mall <br>
+                    Banjara Hills, Hyderabad
+                </p>
+                <h2>Give Us a ring</h2>
+                <p>+91897*******</p>
+            </div>
+            <div class="column2">
+                <form class="form">
+                    <div class="con">
+                        Contact Us
+                    </div>
+                    <div class="text">
+                        Name
+                        <input type="text" id="name"  class="name" placeholder="Enter name" ><br><br>
+                        Email
+                        <input type="text" id="email" class="name" placeholder="Enter Email" ><br><br>
+                        Message
+                        <textarea class="name" id="message" name="Your Message" id="msg" placeholder="Your Message" cols="10" rows="4"></textarea><br><br>
+                        <button type="button"  onclick= "return valid()" target="#" class="btn">Send Message</button>
+                        <input type="checkbox" id="rob">I'm not a Robot
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

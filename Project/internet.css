@@ -1,0 +1,36 @@
+body{
+    background-image: url(2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.log{  
+    float: left;
+    padding: 10px;
+}
+.tit{
+    text-align: left;
+    vertical-align: middle;
+    height:100px ;
+     
+    font-size: xx-large;
+    line-height: 100px;
+}
+.title{
+    background-color: black;
+    color: whitesmoke;
+}
+.container{
+    padding-top: 20px;
+}
+.form{
+    background-color: rgba(230, 210, 210, 0.6);
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgb(63, 52, 52);
+}
+.a1{
+    text-align: right;
+}
+.a2{
+    text-align: center;
+}

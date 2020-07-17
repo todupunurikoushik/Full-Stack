@@ -1,0 +1,63 @@
+body{
+    background-image: url(2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.log{  
+    float: left;
+    padding: 10px;
+}
+.tit{
+    text-align: center;
+    vertical-align: middle;
+    height:100px ;
+    color: white;
+    background-color: black;
+    font-size: xx-large;
+    line-height: 100px;
+}
+.row{
+    padding: 20px;
+    
+}
+.column1 {
+    float: left;
+    width: 50%;
+}
+.column2 {
+    float: right;
+    width: 48%;
+}
+h1{
+    
+    color: white;
+   
+}
+table{
+    border: solid black 2px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgb(63, 52, 52);
+    background-color: rgb(124, 114, 114);
+    
+}
+th,td{
+    text-align: center;
+    padding: 10px;
+}
+tr{
+    width: 100%;
+}
+nav{
+    padding-top: 15px;
+    height: 10px;
+}
+a{
+    
+    height: 50px;
+    padding-right: 50px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 19px;
+    color: white;
+}

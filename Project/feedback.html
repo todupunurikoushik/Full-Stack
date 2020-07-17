@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+        <link href="feedback.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="feedback.js"></script>
+        
+    </head>
+    <body>
+        <div class="log">
+            <img src="logo.jpeg" height="80px" width="160px" />
+        </div>
+        <div class="tit">
+            KAPS Broadband Services
+        </div>
+        <nav>
+            <a href="home.html" target="_self">Home</a>
+            <a href="service.html" target="_self">Service Plans</a>
+            <a href="renewal.html" target="_self">Renewal</a>
+            <a href="registration.html" target="_self">Registration</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            <a href="contact.html" target="_self">Contact Us</a>
+            <a href="Internet.html" target="_self" class="a1">Logout</a>
+        </nav>
+        <div class="form">
+            <form>
+                <div class="fed">
+                    Feedback
+                </div>
+                <div class="row">
+                    Name
+                    <input type="text" id="name" class="name" placeholder="Enter name" name="name"><br><br>
+                    Email
+                    <input type="text" id="email" class="name" placeholder="Enter Email" ><br><br>
+                    Feedback
+                    <textarea class="name" id="feedback" name="Your Feedback" id="msg" placeholder="Your Feedback" cols="10" rows="4"></textarea><br><br>
+                    <div class="button">
+                        <button type="button"  onclick= "return valid()" target="#" id="btn" >Submit</button>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
