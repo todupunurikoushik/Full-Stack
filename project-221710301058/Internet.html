@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KAPS Broadband</title>
+        <link href="internet.css" rel="StyleSheet" />
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="StyleSheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    if($('#txtUsername').val() == "") 
+                        {
+                            swal({
+                                text:"Enter Username",
+                                icon:"error"
+                            });
+                            return false;
+                        }
+                        else if ($('#txtPassword').val() == "")
+                        {
+                            swal({
+                                text:"Enter Password",
+                                icon:"error"
+                            });
+                            return false;
+                        }
+                        else 
+                        {
+                            window.location.href = "home1.html"; 
+                        }
+                        var api_url = "http://localhost:3000/signin";
+                    var data = {
+                        username: $('#txtUsername').val(),
+                        password: $('#txtPassword').val(),
+                    }
+                    $.ajax({
+                        url:api_url,
+                        type:"POST",
+                        dataType:"Json",
+                        data:data,
+                    })
+                });
+            });
+        </script>
+                    
+                    
+                        
+                            
+                            
+                        
+    
+                    
+            
+    </head>
+    <body>
+        <body style="background-color: darkslategray;">
+            <div class="container-fluid">
+                <div class="row" id="row1">
+                    <div class="col-md-2">
+                        <img src="logo.jpeg" height="80px" width="160px" />
+    
+                    </div>
+                    <div class="col-md-8" id="a">
+                        <h2 style="text-align: center;">KAPS Broadband Services</h2>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="w3-content w3-section">
+                        <div><img class="mySlides w3-animate-fading" src="10.webp" width="100%" /></div>
+                        <div><img class="mySlides w3-animate-fading" src="13.webp" width="100%" /></div>
+                        <div><img class="mySlides w3-animate-fading" src="12.jpg" width="100%" /></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    
+
+                    <form action="" method="POST"  class="form" >
+                        <h3 style="text-align: center;">Sign in</h3>
+                        <div class="form-group">
+                            <span><i class="fa fa-user-circle fa-1x"></i></span>
+                            <label for="Username">Username*</label>
+                            <input type="text" class="form-control" id="txtUsername" placeholder="Enter Username" />
+                        </div>
+                        <div class="form-group">
+                            <span><i class="fa fa-unlock" aria-hidden="true"></i></span>
+                            <label for="Password">Password*</label>
+                            <input type="text" class="form-control" id="txtPassword" placeholder="Enter Password" />
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary" id="btn" style="width: 100%;" >Login</button><br /><br />
+                        
+                        <a href="forgotpassword.html" class="a1"><b>Forgot Password?</b></a><br /><br />
+                        <a class="a2">New Here? <a href="signup.html"><b>Create an account here</b></a></a>
+                        
+                    </form>
+                        
+                    
+                </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 5000);    
+                    }
+                    </script>
+            </div>            
+            
+        </div>
+        
+    </body>
+</html>

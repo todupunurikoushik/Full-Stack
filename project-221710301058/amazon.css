@@ -1,0 +1,29 @@
+#row1{
+    background-color: darkcyan;
+    
+}
+#a{
+    padding-top: 15px;
+    font: bold;
+    color: white;
+}
+.form{
+    background-image: url(axiscol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgb(63, 52, 52);
+    color: white;
+}
+
+#row{
+    padding-top: 40px;
+
+}
+
+h5{
+    text-align: center;
+    color: black;
+    
+}

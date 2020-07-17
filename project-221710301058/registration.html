@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+        <link href="registration.css" rel="StyleSheet" />
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+
+        <script src="registration.js"></script>
+        
+    </head>
+    <body>
+        <body style="background-color: darkslategray;">
+            <div class="container-fluid">
+                <div class="row" id="row1">
+                    <div class="col-md-2">
+                        <img src="logo.jpeg" height="80px" width="160px" />
+    
+                    </div>
+                    <div class="col-md-8" id="a">
+                        <h2 style="text-align: center;">KAPS Broadband Services</h2>
+    
+                    </div>
+                    <div class="col-md-1" id="a">
+                        <a href="home1.html#contact"  target="_self"><img src="3.png" height="40px" width="40px" /></a>
+    
+                    </div>
+                    <div class="col-md-1" id="a">
+                        <a href="feedback.html"  target="_self"><img src="4.jpg" height="40px" width="40px" /></a>
+    
+                    </div>
+                </div>
+            </div>
+                <nav class="navbar navbar-expand-lg bg-dark ">
+                    <div class="container">
+                        <div class="navbar-collapse collapse bg-light" id="navbar10">
+                            <ul class="navbar-nav nav-fill w-100">
+                                <li class="nav-item ">
+                                    <a class="nav-link font-weight-bold" href="home1.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="service.html" target="_self">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="renewal.html">Renewal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="registration.html">Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="feedback.html">Feedback</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="home1.html#contact">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="Internet.html">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            <section><br><br>
+            <section>
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <form action="" method="POST"   >
+                                
+                                <h3 style="text-align: center;">Register for connection</h3><br>
+                                
+                                <div class="form-group text-left">
+                                    
+                                    
+                                    <b>Name*</b><input type="text" class="form-control" width="75%" id="name" placeholder="Enter name" />
+                                </div>
+                                <div class="form-group text-left">
+                                    
+                                    <label for="Email"></label>
+                                    <b>Email*</b><input type="text" class="form-control" id="email" placeholder="Enter Email" />
+                                </div>
+                                <div class="form-group text-left">
+                                    
+                                    <label for="Number"></label>
+                                    <b>Phone Number*</b><input type="number" class="form-control" id="number" placeholder="Enter Phone Number" />
+                                </div>
+                                <div class="form-group text-left">
+                                    
+                                    <label for="Address"></label>
+                                    <b>Address*</b><textarea type="text" class="form-control" id="address" rows="4" cols="30" placeholder="Enter Address"></textarea>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-primary" onclick="return valid()" id="btn" target="#" style="width: 100%;" >Submit</button><br /><br />
+                                
+                                
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+               
+                    
+                
+                
+            
+        </div>
+    </body>
+</html>

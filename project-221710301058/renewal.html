@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Renewal</title>
+        <link href="renewal.css" rel="StyleSheet" />
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    if($('#number').val() == ""){
+                        swal({
+                            text:"Enter Service Number",
+                            icon:"error"
+                        });
+                        return false;
+                    }
+                    else{
+                        var api_url = "http://localhost:3000/servicenumber";
+                        var data = {
+                            service_number: $('#number').val(),
+                            
+                        }
+                        $.ajax({
+                            url:api_url,
+                            type:"POST",
+                            dataType:"Json",
+                            data:data,
+                            
+                        })
+                        window.location.href = "payment.html";
+                    }
+                    
+                        
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <body style="background-color: darkslategray;">
+            <div class="container-fluid">
+                <div class="row" id="row1">
+                    <div class="col-md-2">
+                        <img src="logo.jpeg" height="80px" width="160px" />
+    
+                    </div>
+                    <div class="col-md-8" id="a">
+                        <h2 style="text-align: center;">KAPS Broadband Services</h2>
+    
+                    </div>
+                    <div class="col-md-1" id="a">
+                        <a href="home1.html#contact"  target="_self"><img src="3.png" height="40px" width="40px" /></a>
+    
+                    </div>
+                    <div class="col-md-1" id="a">
+                        <a href="feedback.html"  target="_self"><img src="4.jpg" height="40px" width="40px" /></a>
+    
+                    </div>
+                </div>
+            </div>
+                <nav class="navbar navbar-expand-lg bg-dark ">
+                    <div class="container">
+                        <div class="navbar-collapse collapse bg-light" id="navbar10">
+                            <ul class="navbar-nav nav-fill w-100">
+                                <li class="nav-item ">
+                                    <a class="nav-link font-weight-bold" href="home1.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="service.html" target="_self">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="renewal.html">Renewal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="registration.html">Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="feedback.html">Feedback</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="home1.html#contact">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="Internet.html">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            <section><br><br>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <form action="" method="POST"  class="form" >
+                                    <h3 style="text-align: center;">Plan Renewal</h3>
+                                    <div class="form-group text-left">
+                                        
+                                        <label for="service number">Service Number*</label>
+                                        <input type="number" class="form-control" id="number" placeholder="100-Your Registered Mobile Number" />
+                                    </div>
+                                    <div class="form-group">
+                                        
+                                        <label for="plans">Browse a Plan*</label>
+                                        <select name="plans" id="plans" class="box">
+                                            <option>None</option>
+                                            <option>4G 3GB 28Days 455/-</option>
+                                            <option>4G 5GB 28Days 655/-</option>
+                                            <option>4G 6GB 28Days 755/-</option>
+                                            <option>4G 7GB 28Days 855/-</option>
+                                            <option>4G 10GB 28Days 989/-</option>
+                                            <option>3G 20MB 1Day 5/-</option>
+                                            <option>3G 90MB 3Days 23/-</option>
+                                            <option>3G 200MB 5Days 53/-</option>
+                                            <option>2G 30MB 1Day 5/-</option>
+                                            <option>2G 145MB 3Days 25/-</option>
+                    
+                                        </select>
+                    
+                                    </div>
+                                    <br>
+                                    <button type="button" class="btn btn-primary" id="btn" style="width: 100%;" >Login</button><br /><br />
+                                    
+                                    
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+        
+        </div>
+    </body>
+</html>

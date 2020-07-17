@@ -1,0 +1,42 @@
+<div class="row">
+            <div class="column1">
+                <img src="3.webp" width="400px" height="300px"/>
+            </div>
+            <div class="column2">
+                
+                <div class="text">
+                    <h2>ABOUT US</h2>
+                    The KAPS Broadband Service is providing Fastest Internet through Broadband Connection.<br />
+                    Don't Wait, Register today to get Broadband Connection and our agent will connect to you further
+                    details on Service plans. Also You can check different types of plans which we are providing in
+                    this website.
+                </div>
+                    <form>
+                        <div class="trend">
+                            <div class="head">
+                                <h5>Trending plans</h5>
+                            </div>
+                            <div class="txt1">
+                                1.Rs 98 plan: 2GB(4G) data, validity: 28Days.
+                                
+                                 <a href="payment.html"><button style="width: 20%;" type="button" >Apply</button></a>   
+                                
+                                <br>
+                                2.Rs 198 plan: 1.4GB(4G)/Day, validity: 28Days.
+                                <a href="payment.html"><button style="width: 17%;" type="button" >Apply</button></a>
+                                <br>
+                                3.Rs 299 plan: 2GB(4G)/Day, validity: 28Days.
+                                <a href="payment.html"><button style="width: 20%;" type="button" >Apply</button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div class=row2>
+            <div class="column3">
+                <div class="conn">
+                    <h3 style="text-align: center;">For New Connection:<a class="clic" href="registration.html">Click Here</a></h3>
+                </div>
+            </div>
+        </div>
+        </div>

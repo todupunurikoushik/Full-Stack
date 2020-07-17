@@ -1,0 +1,27 @@
+
+.form{
+    background-color: #000053;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgb(63, 52, 52);
+    color: white;
+}
+.tit{
+    text-align: left;
+    vertical-align: middle;
+    height:100px ;
+     
+    font-size: xx-large;
+    line-height: 100px;
+}
+.title{
+    background-color: black;
+    color: whitesmoke;
+}
+.log{  
+    float: left;
+    padding: 10px;
+}
+#row{
+    padding-top: 40px;
+}

@@ -1,0 +1,33 @@
+#row1{
+    background-color: darkcyan;
+    
+}
+#a{
+    padding-top: 15px;
+}
+#d:hover{
+    background-color: darkorange;
+    color: black;
+    margin-top: 5px;
+}
+#d{
+    text-align: center;
+    background-color: darkturquoise;
+    margin-top: 5px;
+}
+td{
+   color: aliceblue;
+}
+.table{
+    background-color: cadetblue;
+}
+h1{
+    color: seashell;
+    text-align: center;
+}
+td th{
+    text-align: center;
+}
+hr.star-light {
+    border-color: #fff;
+}

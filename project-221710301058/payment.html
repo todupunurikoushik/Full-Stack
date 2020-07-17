@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="StyleSheet"/>
+        <link href="payment.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="StyleSheet" />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    window.open('debitcredit.html');
+                });
+                $("#btn2").click(function(){
+                    window.open('sbi.html');
+                });
+                $("#btn3").click(function(){
+                    window.open('hdfc.html');
+                });
+                $("#btn4").click(function(){
+                    window.open('icici.html');
+                });
+                $("#btn5").click(function(){
+                    window.open('axis.html');
+                });
+                $("#btn6").click(function(){
+                    window.open('amazon.html');
+                });
+                $("#btn7").click(function(){
+                    window.open('paytm.html');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <body style="background-color: darkslategray;">
+            <div class="container-fluid">
+                <div class="row" id="row1">
+                    <div class="col-md-2">
+                        <img src="logo.jpeg" height="80px" width="160px" />
+    
+                    </div>
+                    <div class="col-md-8" id="a">
+                        <h2 style="text-align: center;">KAPS Broadband Services</h2>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+                    <form action="" method="POST"  class="form" >
+                        <h3 style="text-align: center;">Select Payment Method</h3><br /><br>
+                        
+                        <div>
+                            <a><b>My Cards</b></a>
+                            <button type="button" class="btn btn-light" id="btn1" style="width: 100%;"><img src="plus2.png"  height="30px" width="30px">      <b>New Card</b>       (Debit/Credit)</button>
+                        </div><br /><br />
+                        <div>
+                            <a><b>Netbanking</b></a>
+                            <button type="button" class="btn btn-light" id="btn2" style="width: 100%;"><img src="sbi.png" height="30px" width="30px">        <b>SBI</b></button>
+                            <button type="button" class="btn btn-light" id="btn3" style="width: 100%;"><img src="hdfc.png" height="30px" width="30px">        <b>HDFC</b></button>
+                            <button type="button" class="btn btn-light" id="btn4" style="width: 100%;"><img src="icici.png" height="30px" width="30px">        <b>ICICI</b></button>
+                            <button type="button" class="btn btn-light" id="btn5" style="width: 100%;"><img src="axis.png" height="30px" width="30px">        <b>AXIS</b></button>
+
+                        </div><br /><br />
+                        <div>
+                            <a><b>Wallets</b></a>
+                            <button type="button" class="btn btn-light" id="btn6" style="width: 100%;"><img src="amazon.png" height="35px" width="35px">        <b>Amazon Pay</b></button>
+                            <button type="button" class="btn btn-light" id="btn7" style="width: 100%;"><img src="paytm.png" height="35px" width="35px">        <b>Paytm</b></button>
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
